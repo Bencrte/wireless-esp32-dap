@@ -21,7 +21,7 @@ jobs:
 
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         submodules: recursive
 
@@ -89,7 +89,7 @@ jobs:
 
 
     - name: Upload firmware
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: firmware_${{ matrix.target-hardware }}.zip
         path: |
